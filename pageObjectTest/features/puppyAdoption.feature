@@ -14,4 +14,3 @@ Feature: Adopting a puppy
     |Ruby Sue  |Travel Carrier ($39.99)|    |123 street     |xyz@aaa.com|Credit card  |Name can't be blank|
     |Hanna    |Collar & Leash ($19.99)|aaa |               |qqq@sss    |Purchase order|Address can't be blank|
 
-Scenario:
