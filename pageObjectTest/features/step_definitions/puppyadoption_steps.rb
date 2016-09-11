@@ -18,16 +18,15 @@ And(/^select (.*) and click on complete adoption button$/) do |argument|
 end
 
 Then(/^I should be navigated to checkout page$/) do
-
+p expect(@browser.title =~ /Sally's Puppy Adoption Agency/)
 p @current_page.title
 end
 
-When(/^I enter (.*) and (.*) and (.*)select (.*) without entering Email field$/) do |name, address, email, pay_Type|
+When(/^I enter (.*) and (.*) and (.*)select (.*)$/) do |name, address, email, pay_Type|
   on(CheckoutPagep).ordername = name
   on(CheckoutPagep).address = address
   on(CheckoutPagep).email = email
   on(CheckoutPagep).paytype = pay_Type
-
 end
 
 And(/^click on Place Order$/) do
@@ -38,3 +37,4 @@ end
 Then(/^I should see the Message (.*)$/) do |message|
   @current_page.text.should include message
 end
+
