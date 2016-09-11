@@ -18,7 +18,7 @@ And(/^select (.*) and click on complete adoption button$/) do |argument|
 end
 
 Then(/^I should be navigated to checkout page$/) do
-p expect(@browser.title =~ /Sally's Puppy Adoption Agency/)
+expect(@browser.title =~ /Sally's Puppy Adoption Agency/)
 p @current_page.title
 end
 
